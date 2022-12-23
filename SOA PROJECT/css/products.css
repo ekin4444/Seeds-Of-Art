@@ -1,0 +1,597 @@
+/* MENU */
+
+body {
+    margin: 0;
+    background-color: #080710;
+}
+
+.header-holder {
+    width: 100%;
+    background-color: #000000;
+    z-index: 4;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    z-index: 5;
+    -webkit-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-mobile {
+    /*     display: none; */
+    position: absolute;
+    top: -5px;
+    right: 50px;
+    z-index: 6;
+}
+
+.search-mobile a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+
+.search-mobile a .icon_search {
+    width: 25px;
+    height: 25px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+.header-nav {
+    order: 2;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-nav.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.97);
+    z-index: 10;
+    opacity: 1;
+    -webkit-transition: opacity 0.6s linear;
+    transition: opacity 0.6s linear;
+}
+
+.header-nav.active .header-nav__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    overflow: auto;
+}
+
+nav.active ul {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+}
+
+nav.active ul li {
+    padding: 10px 0;
+}
+
+nav ul {
+    padding: 8px 0 0 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 0 0 13px;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    font-family: "BrandonText", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    letter-spacing: 0.9px;
+    position: relative;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(145, 101, 106);
+    transition: color .2s ease-in-out;
+}
+
+.device-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 55px;
+    height: 50px;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 45px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.device-menu .device-menu__inner {
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.device-menu span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: white;
+    top: 5px;
+    left: 0;
+    /*     -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); */
+}
+
+.device-menu span:nth-child(1) {
+    top: 0;
+    -webkit-transition: rotate, 0.3s;
+    transition: rotate, 0.3s;
+}
+
+.device-menu span:nth-child(2) {
+    top: 50%;
+    /*     -webkit-transform: translate(0, -50%); */
+    /*     transform: translate(0, -50%); */
+}
+
+
+/* .device-menu.open span:nth-child(2) {
+  opacity: 0;
+  } */
+
+.device-menu span:nth-child(3) {
+    top: 100%;
+    -webkit-transition: rotate, 0.3s;
+    transition: rotate, 0.3s;
+}
+
+.device-menu.open span:nth-child(1) {
+    top: 10px;
+    right: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.device-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.device-menu.open span:nth-child(3) {
+    top: 10px;
+    right: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* @media only screen and (max-width: 1024px) { */
+
+
+/*   @media only screen and (max-width: 2000px) {
+  .head {
+  display: none; 
+  }
+  
+  .head.active {
+  display: block;
+  }
+  
+  .device-menu {
+  display: block;
+  }
+  } */
+
+
+/* ANASAYFA */
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-section div {
+    position: relative;
+}
+
+.header-section p {
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+
+.cart {
+    /* Cart icon */
+    width: 39px;
+    height: 38px;
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 45px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.count-product {
+    /* Cart icon */
+    width: 39px;
+    height: 38px;
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    z-index: 20;
+    color: #fff;
+    width: 45px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.cart-products {
+    /* shopping carta basınca açılan kutucuk */
+    position: fixed;
+    top: 82px;
+    right: 18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 290px;
+    z-index: 2;
+}
+
+.cart:hover {
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+.btn-checkOut {
+    background-color: #000;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+
+/*end header*/
+
+.products {
+    padding-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts {
+    /* kartlar */
+    width: 250px;
+    background-color: rgb(255, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+    min-height: 30vh;
+}
+
+.carts img {
+    max-width: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.carts p {
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+
+.carts div p {
+    /* fiyat bilgileri */
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.carts div {
+    position: relative;
+}
+
+.carts a {
+    font-family: system-ui;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+    transition-duration: .3s;
+}
+
+
+/*float cart*/
+
+.cart-products .item img {
+    width: 115px;
+}
+
+.cart-products .item {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(0, 0, 0);
+}
+
+.cart-products .item .item-content {
+    margin: 0 19px;
+    width: 201px;
+}
+
+.cart-products .item .item-content h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item .item-content h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item span {
+    /* çarpı işareti */
+    background-color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.cart-products h3 {
+    margin-bottom: 0;
+}
+
+.cart-products h3 {
+    margin-bottom: 5px;
+}
+
+.cart-products .item .item-content h5.cart-price {
+    font-weight: 700;
+}
+
+
+/*stye to btn close*/
+
+p.close-btn {
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* OPEN IMAGE */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* OPEN IMAGE */
+
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: black;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title href="index.html">Products</title>
+    <link rel="stylesheet" href="css/products.css" />
+</head>
+
+<body>
+
+
+    <div class="header-holder">
+        <header class="header">
+
+            <div class="search-mobile" style="display: block;">
+                <a rel="nofollow">
+                    <i class="icon_search"></i>
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <div class="header-nav__inner">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="products.html">PRODUCTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutSoa.html">ABOUT SOA</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutArtist.html">ABOUT ARTIST</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="video.html">VIDEOS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="clients.html">CLIENTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="https://www.instagram.com/_seeds_of_art_/">SOCIAL</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <a href="index.html" class="logo"><img src="./images/logo.png"></a>
+
+            <a class="device-menu">
+                <div class="device-menu__inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </header>
+    </div>
+    <img onmouseover="showCart(this)" class="cart" src="./images/shop-cart.png" alt="">
+    <p class="count-product">0</p>
+    </div>
+    <div class="cart-products" id="products-id">
+        <p class="close-btn" onclick="closeBtn()">X</p>
+        <h3>My Cart</h3>
+        <div class="card-items">
+        </div>
+        <h2>Total: <strong class="price-total">0</strong> $</h2>
+        <a href="address.html" class="btn-checkOut" style="float: right;">Check Out</a>
+    </div>
+    </div>
+    <div class="search-mobile" style="display: block;">
+        <a rel="nofollow">
+            <i class="icon_search"></i>
+        </a>
+    </div>
+
+    <main>
+        <section class="container">
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./images/3.jpg" alt="">
+                        <p><span>99.99</span>$</p>
+                    </div>
+                    <p class="title" style="color: rgb(0, 0, 0);">Bees</p>
+                    <a href="" data-id="1" class="btn-add-cart" style="border-radius: 10px;">add to cart</a>
+                </div>
+                <div id="fullpage" onclick="this.style.display='none';"></div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/5.jpg" alt="">
+                        <p><span>999.99</span>$</p>
+                    </div>
+                    <p class="title">Whisky</p>
+                    <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/10.jpg" alt="">
+                        <p><span>799.99</span>$</p>
+                    </div>
+                    <p class="title">Cat</p>
+                    <a href="" class="btn-add-cart" data-id="3">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/15.jpg" alt="">
+                        <p><span>299.99</span>$</p>
+                    </div>
+                    <p class="title">Scream</p>
+                    <a href="" class="btn-add-cart" data-id="4">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/1.jpg" alt="">
+                        <p><span>24.99</span>$</p>
+                    </div>
+                    <p class="title">Waves</p>
+                    <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/7.jpg" alt="">
+                        <p><span>24.99</span>$</p>
+                    </div>
+                    <p class="title">Buildings</p>
+                    <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/8.jpg" alt="">
+                        <p><span>69.99</span>$</p>
+                    </div>
+                    <p class="title">Ice Skaters</p>
+                    <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/9.jpg" alt="">
+                        <p><span>89.99</span>$</p>
+                    </div>
+                    <p class="title">Starry Night</p>
+                    <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/2.jpg" alt="">
+                        <p><span>79.99</span>$</p>
+                    </div>
+                    <p class="title">Evening</p>
+                    <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/11.jpg" alt="">
+                        <p><span>64.99</span>$</p>
+                    </div>
+                    <p class="title">Amusement Park</p>
+                    <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/12.jpg" alt="">
+                        <p><span>84.99</span>$</p>
+                    </div>
+                    <p class="title">Rainy Day</p>
+                    <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/13.jpg" alt="">
+                        <p><span>119.99</span>$</p>
+                    </div>
+                    <p class="title">Home</p>
+                    <a href="" data-id="12" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/14.jpg" alt="">
+                        <p><span>299.99</span>$</p>
+                    </div>
+                    <p class="title">Flower</p>
+                    <a href="" data-id="13" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/16.jpg" alt="">
+                        <p><span>119.99</span>$</p>
+                    </div>
+                    <p class="title">Tomato</p>
+                    <a href="" data-id="14" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/4.jpg" alt="">
+                        <p><span>39.99</span>$</p>
+                    </div>
+                    <p class="title">Minivan</p>
+                    <a href="" data-id="15" class="btn-add-cart">add to cart</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./images/17.jpg" alt="">
+                        <p><span>399.99</span>$</p>
+                    </div>
+                    <p class="title">Fairy Home</p>
+                    <a href="" data-id="16" class="btn-add-cart">add to cart</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script>
+    const openMobileMenuBtn = document.querySelector(".device-menu");
+    const headerMenu = document.querySelector(".header-nav");
+
+    openMobileMenuBtn.addEventListener("click", () => {
+        if (openMobileMenuBtn.classList.contains("open")) {
+            openMobileMenuBtn.classList.remove("open");
+            headerMenu.classList.remove("active");
+        } else {
+            headerMenu.classList.add("active");
+            openMobileMenuBtn.classList.add("open");
+        }
+    })
+
+    function showCart(x) {
+        document.getElementById("products-id").style.display = "block";
+    }
+
+    function closeBtn() {
+        document.getElementById("products-id").style.display = "none";
+    }
+    // OPEN IMAGE
+    function getPics() {} //just for this demo
+    const imgs = document.querySelectorAll('.carts img');
+    const fullPage = document.querySelector('#fullpage');
+
+    imgs.forEach(img => {
+        img.addEventListener('click', function() {
+            fullPage.style.backgroundImage = 'url(' + img.src + ')';
+            fullPage.style.display = 'block';
+        });
+    });
+</script>
+<script src="./js/script.js"></script>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title href="index.html">Seeds Of Art</title>
+    <link rel="stylesheet" href="css/address.css" />
+</head>
+
+<body>
+
+
+    <div class="header-holder">
+        <header class="header">
+
+            <div class="search-mobile" style="display: block;">
+                <a rel="nofollow">
+                    <i class="icon_search"></i>
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <div class="header-nav__inner">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="products.html">PRODUCTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutSoa.html">ABOUT SOA</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutArtist.html">ABOUT ARTIST</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="video.html">VIDEOS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="clients.html">CLIENTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="https://www.instagram.com/_seeds_of_art_/">SOCIAL</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <a href="index.html" class="logo"><img src="./images/logo.png"></a>
+
+            <a class="device-menu">
+                <div class="device-menu__inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </header>
+    </div>
+
+    <main>
+
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ekin Filiz Ataş">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="ekinfiliza@hotmail.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="Istanbul">
+                </div>
+            </div>
+            <center>
+                <div class="check">
+                    <a href="checkOut.html">Continue to Checkout</a>
+                </div>
+            </center>
+        </form>
+
+    </main>
+</body>
+<script>
+    const openMobileMenuBtn = document.querySelector(".device-menu");
+    const headerMenu = document.querySelector(".header-nav");
+
+    openMobileMenuBtn.addEventListener("click", () => {
+        if (openMobileMenuBtn.classList.contains("open")) {
+            openMobileMenuBtn.classList.remove("open");
+            headerMenu.classList.remove("active");
+        } else {
+            headerMenu.classList.add("active");
+            openMobileMenuBtn.classList.add("open");
+        }
+    })
+</script>
+
+</html>

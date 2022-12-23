@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title href="index.html">About SOA</title>
+    <link rel="stylesheet" href="css/aboutSoa.css" />
+</head>
+
+<body>
+
+
+    <div class="header-holder">
+        <header class="header">
+
+            <div class="search-mobile" style="display: block;">
+                <a rel="nofollow">
+                    <i class="icon_search"></i>
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <div class="header-nav__inner">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="products.html">PRODUCTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutSoa.html">ABOUT SOA</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="aboutArtist.html">ABOUT ARTIST</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="video.html">VIDEOS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="clients.html">CLIENTS</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="https://www.instagram.com/_seeds_of_art_/">SOCIAL</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <a href="index.html" class="logo"><img src="./images/logo.png"></a>
+
+            <a class="device-menu">
+                <div class="device-menu__inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </header>
+    </div>
+
+    <main>
+        <center>
+            <div class="about" style="font-family: 'Times New Roman', Times, serif; font-size: 35px; color: #301501;">
+                <h1 class="about name">About SOA</h1>
+            </div>
+            <div class="card">
+                <p class="aboutSoa">It is an art gallery opened to share with people the painting projects that have developed and multiplied since childhood and to deliver these paintings to people who are interested in art.</p>
+                <a href="products.html"><button class="btn">View Products</button></a>
+            </div>
+        </center>
+
+    </main>
+</body>
+<script>
+    const openMobileMenuBtn = document.querySelector(".device-menu");
+    const headerMenu = document.querySelector(".header-nav");
+
+    openMobileMenuBtn.addEventListener("click", () => {
+        if (openMobileMenuBtn.classList.contains("open")) {
+            openMobileMenuBtn.classList.remove("open");
+            headerMenu.classList.remove("active");
+        } else {
+            headerMenu.classList.add("active");
+            openMobileMenuBtn.classList.add("open");
+        }
+    })
+</script>
+
+</html>
